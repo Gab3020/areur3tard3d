@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <p>Join Or I will Find out where you live:></p>
+    <main id="main">
+      <h1 id="title">Are You Retarded?</h1>
+      <p id="description">
+        Enter your information here to receive updates your mental state.
+        our monthly newsletter, and other email communications will give you answers.
+      </p>
+      <form id="survey-form" action="#">
+        <label for="name" id="name-label"
+          ><p>Name:</p>
+          <input type="text" id="name" placeholder="e.g. John Smith" required />
+        </label>
+        <label for="email" id="email-label"
+          ><p>Email:</p>
+          <input
+            type="email"
+            id="email"
+            placeholder="e.g. john.smith@email.com"
+            required
+          />
+        </label>
+        <label for="age" id="number-label"
+          ><p>Age<em>(optional)</em>:</p>
+          <input
+            type="number"
+            id="number"
+            placeholder="e.g. 19"
+            min="18"
+            max="99"
+          />
+        </label>
+        <label for="interest" id="interest-label"
+          ><p>What are you most interested in?</p>
+          <select id="dropdown">
+            <option selected disabled hidden></option>
+            <option id="Suckingtoes">Suckingtoes</option>
+            <option id="SniffingGlue">SniffingGlue</option>
+            <option id="Playing Rolobox">Playing Rolobox</option>
+            <option id="Cocaine">Cocaine</option>
+          </select>
+        </label>
+        <p>Do you Like cheese?</p>
+        <label for="togepi">
+          <input
+            id="Yeah"
+            type="radio"
+            name="Choices"
+            value="yes"
+          />Yeah!
+        </label>
+        <label for="pikachu">
+          <input
+            id="Nah"
+            type="radio"
+            name="Choices"
+            value="no"
+          />Nah!
+        </label>
+        <label for="other">
+          <input id="other" type="radio" name="Choices" value="other" />Other
+        </label>
+        <p>Which communications do you want to receive?</p>
+        <label for="Updates">
+          <input
+            id="Email"
+            type="checkbox"
+            name="communications"
+            value="newsletter"
+          />Updates on your mental health
+        </label>
+        <label for="events">
+          <input
+            id="events"
+            type="checkbox"
+            name="communications"
+            value="events"
+          />Event updates
+        </label>
+        <label for="updates">
+          <input
+            id="updates"
+            type="checkbox"
+            name="communications"
+            value="updates"
+          />Ya Balls
+        </label>
+        <p>Any other information you would like to share?</p>
+        <textarea id="additional-information" rows="4" cols="50">
+You can provide comments, suggestions, or feedback here.</textarea
+        >
+        <p>
+          <em
+            >Please note: This form is a proof of concept. Submitting the form
+            will not actually transmit your data.</em
+          >
+        </p>
+        <button type="Submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+  <footer>
+<a href="https://www.facebook.com/photo/?fbid=139077042861406&set=a.104834732952304">ClickHere</a>
+  </footer>
+</html>
